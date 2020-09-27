@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+
+</head>
+
+<style>
+    body{
+        background: rgb(44, 44, 44);
+        color: whitesmoke;
+    }
+
+    #B2D{
+        width: 500px;
+        height: 250px;
+        margin: center;
+        background: rgb(59, 59, 59);
+        border: 0.2em solid rgb(59, 59, 59);
+        border-radius: 35px;
+        text-align: center;
+    }
+
+    #LBIN{
+        margin-right: 125px;
+        margin-left: 0px;
+    }
+
+    #LDEC{
+        margin-right: 5px;
+    }
+
+</style>
+
+<body>
+
+    <div id="B2D">
+    <h1>Bin2Dec</h1>
+    <label for="BIN" id="LBIN">Binary</label>
+    <label for="DEC" id="LDEC">Decimal</label><br><br>
+    <input type="text" id="BIN" name="BIN" value="0000">
+    <input type="number" id="DEC" name="DEC" value="0">
+    </div>
+</body>
+<script>
+
+    const LBIN = window.document.getElementByID("LBIN")
+    const LDEC = window.document.getElementByID("LDEC")
+    const BIN = window.document.getElementByID("BIN")
+    const DEC = window.document.getElementByID("DEC")
+
+</script>
+</html>

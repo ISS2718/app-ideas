@@ -43,14 +43,55 @@
     <label for="DEC" id="LDEC">Decimal</label><br><br>
     <input type="text" id="BIN" name="BIN" value="0000">
     <input type="number" id="DEC" name="DEC" value="0">
+    <br><br>
+    <input type="button" id='Convert' value='Convert' onclick =" update()">
     </div>
 </body>
 <script>
 
-    const LBIN = window.document.getElementByID("LBIN")
-    const LDEC = window.document.getElementByID("LDEC")
-    const BIN = window.document.getElementByID("BIN")
-    const DEC = window.document.getElementByID("DEC")
+    const BIN = window.document.getElementById("BIN")
+    const DEC = window.document.getElementById("DEC")
+     
+    let newValBIN = BIN.value                    
+    let newValDEC = DEC.value
+    let oldValBIN = newValBIN
+    let oldValDEC = newValDEC
+
+    function update() 
+    {
+        newValBIN = BIN.value
+        newValDEC = DEC.value
+        if(newValBIN != oldValBIN)
+        {
+            console.log('newBIN')
+            oldValBIN = newValBIN
+            oldValDEC = newValDEC
+            bin2dec(newValBIN)
+        }
+
+        if (newValDEC != oldValDEC)
+        {
+            console.log('newDEC')
+            oldValDEC = newValDEC
+            oldValBIN = newValBIN
+        }
+    }
+
+    function bin2dec (bin)
+    {
+        let rDEC
+        let Lbin = number(bin.legth)
+        console.log(bin)
+        console.log(bin.replaceAll(' ', ''))
+        
+        for(i = 0; i > Lbin; i++)
+        {
+            let n = 0
+            console.log(n)
+            n++
+        }
+  
+    } 
 
 </script>
 </html>
